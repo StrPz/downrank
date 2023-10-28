@@ -24,14 +24,8 @@ function proposedCommand(spell, target)
 	local party = data:GetParty()
 	local index = data:GetTarget():GetTargetIndex()
 	local name = data:GetEntity():GetName(index)
-	local buffer = ''
-	--local warning = '/echo Downranking Spell!'
-
-	if target:find('st') or target:find('t') then
-		buffer = '/ma \"'..spell..'\" <'..target..'>'	--the targetting is pretty scuffed and i'd like to make it better.
-	elseif target:find('me') then
-		buffer = '/ma \"'..spell..'\" <me>'
-	end
+	local buffer = '/ma \"'..spell..'\" <'..target..'>' --reforms the macro as a new macro with a new proposed spell
+	--local warning = '/echo Downranking Spell!'		--the targetting is pretty scuffed and i'd like to make it better.
 	cmdresource:QueueCommand(buffer, 2)		--This will kick back the entire script to the very beginning with a new spell.
 	return true								--Filter out the previous command.
 
