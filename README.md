@@ -5,27 +5,46 @@ What it do: I didn't like writing a bunch of macros over different macro pages t
 Only for spells that functionally identical. Horizontal spells that are "basically" identical not supported! Example: NIN Ele Wheel.
 
 Missing Spells:
-    * SMN
-    * Meritied Spells (Quake II, Bio III, Phalanx II) are commented out.
-    * Will probably do something for "Horizontal Ranking" like NIN Ele Wheel and BLM Burn/Choke/Shock (Not in yet)
-    * WHM Cure line.
+
+
+    SMN
+
+
+    Meritied Spells (Quake II, Bio III, Phalanx II) are commented out.
+
+
+    Will probably do something for "Horizontal Ranking" like NIN Ele Wheel and BLM Burn/Choke/Shock (Not in yet)
+
+
+    WHM Cure line.
 
 Use case:
-    * Consolidating your macros for non-critical, like-spells.
-    * Don't use this on WHM Cures because I commented it out and you aren't supposed to. lmao.
-        * I guess if you are plvling and doing after fight cures this is fine. Uncomment it yourself.
-    * I'm sure you can figure it out.
+
+    Consolidating your macros for non-critical, like-spells.
+
+    Don't use this on WHM Cures because I commented it out and you aren't supposed to. lmao. I guess if you are plvling and doing after fight cures this is fine. Uncomment it yourself.
+    
+    I'm sure you can figure it out.
 
 
 Installation: 
+
 Hit the green Code Button
+
 Select Download ZIP
+
 Save the file.
+
 Open downrank-main.zip
+
 Copy the folder downrank-main to your Eden\Ashita\addons folder.
+
 Rename downrank-main (the folder) to downrank
+
 You should now have Eden\Ashita\addons\downrank
+
 Get in game and type /addon load downrank.
+
 
 Does it work with Ashitacast?
 It should.
