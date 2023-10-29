@@ -21,9 +21,6 @@ player = data:GetPlayer()
 
 function proposedCommand(spell, target)
 	local cmdresource = AshitaCore:GetChatManager()
-	local party = data:GetParty()
-	local index = data:GetTarget():GetTargetIndex()
-	local name = data:GetEntity():GetName(index)
 	local buffer = '/ma \"'..spell..'\" <'..target..'>' --reforms the macro as a new macro with a new proposed spell
 	--local warning = '/echo Downranking Spell!'		--the targetting is pretty scuffed and i'd like to make it better.
 	cmdresource:QueueCommand(buffer, 2)		--This will kick back the entire script to the very beginning with a new spell.
@@ -32,34 +29,22 @@ function proposedCommand(spell, target)
 end
 
 function downrank(spell, key)
-	local index = nil
-	local bestanswer = nil
+	local hit = false
 	for i,v in pairs(tableofstuff[key]) do		--Get the index of the current spell in the table of values.
-		if v ~= nil and v == spell then
-			index = i
-			break
-		end
-	end
-	--[[if index == #tableofstuff[key] then
-		bestanswer = nil
-	else
-		for x = index+1, #tableofstuff[key] do
-			if not filtered(getspellid(tableofstuff[key][x])) then
-				bestanswer = tableofstuff[key][x]
-				return bestanswer
+		if v~= nil and v == spell then
+			hit = true
+		elseif hit and v ~= nil then			--from the index on...
+			local spellid = getspellid(v)		--run comparisons on the table values to find the best answer.
+			if not filtered(spellid) and maybeiknow(spellid) then
+				return v
 			end
 		end
-		return bestanswer
-	end]]--
-
-	if index == #tableofstuff[key] then
-	elseif (index < #tableofstuff[key]) then
-		bestanswer = tableofstuff[key][index+1]   --Pick the next best spell.
 	end
-	return bestanswer
+	return nil
 end
 
-function maybeiknow(spell, spellid)
+
+function maybeiknow(spellid)
 	local kindaknow = false
 	local mj = player:GetMainJob()
 	local sj = player:GetSubJob()
@@ -120,7 +105,7 @@ function getaction(command, nType)
 		spellid = getspellid(spell)							--Get the spell id using the string...
 		key = parsespell(spell, spellid)					--Key for my k:v dictionary "tables.lua"
 		if key == nil then return false end					--Unsupported spell, fall through.
-		doiknow = maybeiknow(spell, spellid)				--Do I not know the spell for the right reasons?
+		doiknow = maybeiknow(spellid)						--Do I not know the spell for the right reasons?
 		if not doiknow then									--Don't know spell, continue
 			proposedSpell = downrank(spell, key)			--Call downrank to fetch a new proposed spell from the table.
 			if proposedSpell == nil then					--Reached end of table, fall through.

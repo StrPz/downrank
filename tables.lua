@@ -8,16 +8,54 @@ You should have received a copy of the GNU General Public License along with dow
 
 tableofstuff = {
 		--whm
-		['Cure'] = {"Cure V", "Cure IV", "Cure III", "Cure II", "Cure"},
-		['Curaga'] = {"Curaga IV", "Curaga III", "Curaga II", "Curaga"},
-		['Raise'] = {"Raise III", "Raise II", "Raise"},
-		['Reraise'] = {"Reraise III", "Reraise II", "Reraise"},
-		['Protect'] = {"Protect IV", "Protect III", "Protect II", "Protect"},
-		['Shell'] = {"Shell IV", "Shell III", "Shell II", "Shell"},
-		['Protectra'] = {"Protectra V", "Protectra IV", "Protectra III", "Protectra II", "Protectra"},
-		['Shellra'] = {"Shellra V", "Shellra IV", "Shellra III", "Shellra II", "Shellra"},
-		['Regen'] = {"Regen III", "Regen II", "Regen"},
-		['Banish'] = {"Banish III", "Banish II", "Banish"},
+		--['Cure']	=	{"Cure V", "Cure IV", "Cure III", "Cure II", "Cure"},
+		['Curaga']	=	{"Curaga IV", "Curaga III", "Curaga II", "Curaga"},
+		['Raise']	=	{"Raise III", "Raise II", "Raise"},
+		['Reraise']	=	{"Reraise III", "Reraise II", "Reraise"},
+		['Protect']	=	{"Protect IV", "Protect III", "Protect II", "Protect"},
+		['Shell']	=	{"Shell IV", "Shell III", "Shell II", "Shell"},
+		['Protectra']	=	{"Protectra V", "Protectra IV", "Protectra III", "Protectra II", "Protectra"},
+		['Shellra']	=	{"Shellra V", "Shellra IV", "Shellra III", "Shellra II", "Shellra"},
+		['Regen']	=	{"Regen III", "Regen II", "Regen"},
+		['Banish']	=	{"Banish III", "Banish II", "Banish"},
+
+		--blm
+		['Stone']	=	{"Stone IV", "Stone III", "Stone II", "Stone"},
+		['Water']	=	{"Water IV", "Water III", "Water II", "Water"},
+		['Aero']	=	{"Aero IV", "Aero III", "Aero II", "Aero"},
+		['Fire']	=	{"Fire IV", "Fire III", "Fire II", "Fire"},
+		['Blizzard']	=	{"Blizzard IV", "Blizzard III", "Blizzard II", "Blizzard"},
+		['Thunder']	=	{"Thunder IV", "Thunder III", "Thunder II", "Thunder"},
+		['Stonega']	=	{"Stonega III", "Stonega II", "Stonega"},
+		['Waterga']	=	{"Waterga III", "Waterga II", "Waterga"},
+		['Aeroga']	=	{"Aeroga III", "Aeroga II", "Aeroga"},
+		['Firaga']	=	{"Firaga III", "Firaga II", "Firaga"},
+		['Blizzaga']	=	{"Blizzaga III", "Blizzaga II", "Blizzaga"},
+		['Thundaga']	=	{"Thundaga III", "Thundaga II", "Thundaga"},
+		['Sleep']	=	{"Sleep II", "Sleep"},
+		['Sleepga']	=	{"Sleepga II", "Sleepga"},
+		--['Quake']	=	{"Quake II", "Quake"},
+		--['Flood']	=	{"Flood II", "Flood"},
+		--['Tornado']	=	{"Tornado II", "Tornado"},
+		--['Flare']	=	{"Flare II", "Flare"},
+		--['Freeze']	=	{"Freeze II", "Freeze"},
+		--['Burst']	=	{"Burst II", "Burst"},
+		
+
+		--rdm
+		['Dia']		=	{"Dia III", "Dia II", "Dia"},
+		['Bio']		=	{"Bio III", "Bio II", "Bio"},
+		['Poison']	=	{"Poison II", "Poison"},
+		--['Phalanx']	=	{"Phalanx II", "Phalanx"}
+		--['Blind']	=	{"Blind II", "Blind"},
+		--['Paralyze']	=	{"Paralyze II", "Paralyze"},
+		--['Slow']	=	{"Slow II", "Slow"}
+
+		--smn
+		--tbd fuq u
+
+		--drk
+		['Drain']	=	{"Drain II", "Drain"},
 
 		--brd
 		['Minuet'] = {"Valor Minuet IV", "Valor Minuet III", "Valor Minuet II", "Valor Minuet"},
