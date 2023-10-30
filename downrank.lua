@@ -73,6 +73,7 @@ function parsespell(spell, spellid)
 	local key = nil
 	local mj = player:GetMainJob()
 	local sj = player:GetSubJob()
+	if spellid == nil then return key end									-- some1 fucking around
 	local spellinfo = resource:GetSpellById(spellid).LevelRequired
 	if spellinfo[mj] == -1 and spellinfo[sj] == -1 then return key end -- -1 is the value returned when mainjob and subjob are
 	for i in pairs(tableofstuff) do										-- not capable of handling the spell. Can't cast, end.
