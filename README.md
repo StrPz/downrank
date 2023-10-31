@@ -5,18 +5,36 @@ Takes your simple macros such as /ma "Dia II" <t> and kicks them back to the gam
 
 ## Unsupported skills
 >SMN
+
+
 >Merited Spells that aren't Dia or Bio.
+
+
 >WHM Cure Line
 
 ## Installation
 
 >Hit the green Code Button
+
+
 >Select Download ZIP
+
+
 >Save the file.
+
+
 >Open downrank-main.zip
+
+
 >Copy the folder downrank-main to your Eden\Ashita\addons folder.
+
+
 >Rename downrank-main (the folder) to downrank
+
+
 >You should now have Eden\Ashita\addons\downrank
+
+
 >Get in game and type /addon load downrank.
 
 Does it work with Ashitacast? It should.
