@@ -99,33 +99,31 @@ function getaction(command, nType)
 	local doiknow = false
 	local proposedSpell = nil		
 	local spellid = nil
-	if nType == 2 then
-		if string.find(command, "/ma") then
-			local spell = string.match(command, [[/ma%s+"([^"]+)]]) 		-- Grabs the spell and...
-			local target = string.match(command, [[/ma%s+".*"%s+<([^>]+)]])		--Grabs the target.
-			if target == nil then return false end									--If spell cast from menu, fall through.
-			spellid = getspellid(spell)							--Get the spell id using the string...
-			key = parsespell(spell, spellid)					--Key for my k:v dictionary "tables.lua"
-			if key == nil then return false end					--Unsupported spell, fall through.
-			doiknow = maybeiknow(spellid)						--Do I not know the spell for the right reasons?
-			if not doiknow then									--Don't know spell, continue
-				proposedSpell = downrank(spell, key)			--Call downrank to fetch a new proposed spell from the table.
-				if proposedSpell == nil then					--Reached end of table, fall through.
+	if nType == 2 and string.find(command, "/ma") then
+		local spell = string.match(command, [[/ma%s+"([^"]+)]]) 		-- Grabs the spell and...
+		local target = string.match(command, [[/ma%s+".*"%s+<([^>]+)]])		--Grabs the target.
+		if target == nil then return false end									--If spell cast from menu, fall through.
+		spellid = getspellid(spell)							--Get the spell id using the string...
+		key = parsespell(spell, spellid)					--Key for my k:v dictionary "tables.lua"
+		if key == nil then return false end					--Unsupported spell, fall through.
+		doiknow = maybeiknow(spellid)						--Do I not know the spell for the right reasons?
+		if not doiknow then									--Don't know spell, continue
+			proposedSpell = downrank(spell, key)			--Call downrank to fetch a new proposed spell from the table.
+			if proposedSpell == nil then					--Reached end of table, fall through.
+				return false
+			end
+			return proposedCommand(proposedSpell, target)	--Call proposed command, which always returns true
+		else
+			if filtered(spellid) then						--Call filtered to see if the spell is on cd.
+				proposedSpell = downrank(spell, key)
+				if proposedSpell == nil then
 					return false
 				end
-				return proposedCommand(proposedSpell, target)	--Call proposed command, which always returns true
-			else
-				if filtered(spellid) then						--Call filtered to see if the spell is on cd.
-					proposedSpell = downrank(spell, key)
-					if proposedSpell == nil then
-						return false
-					end
-					return proposedCommand(proposedSpell, target)
-				end
+				return proposedCommand(proposedSpell, target)
 			end
-			return false
 		end
-	else return false end
+	end
+	return false
 end
 
 ashita.register_event('command', getaction) -- main 
