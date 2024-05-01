@@ -8,70 +8,70 @@ You should have received a copy of the GNU General Public License along with dow
 
 tableofstuff = {
 		--whm
-		--['Cure']	=	{"Cure V", "Cure IV", "Cure III", "Cure II", "Cure"},
-		['Curaga']	=	{"Curaga IV", "Curaga III", "Curaga II", "Curaga"},
-		['Raise']	=	{"Raise III", "Raise II", "Raise"},
-		['Reraise']	=	{"Reraise III", "Reraise II", "Reraise"},
-		['Protect']	=	{"Protect IV", "Protect III", "Protect II", "Protect"},
-		['Shell']	=	{"Shell IV", "Shell III", "Shell II", "Shell"},
+		--['Cure']		=	{"Cure V", "Cure IV", "Cure III", "Cure II", "Cure"},
+		['Curaga']		=	{"Curaga IV", "Curaga III", "Curaga II", "Curaga"},
+		['Raise']		=	{"Raise III", "Raise II", "Raise"},
+		['Reraise']		=	{"Reraise III", "Reraise II", "Reraise"},
+		['Protect']		=	{"Protect IV", "Protect III", "Protect II", "Protect"},
+		['Shell']		=	{"Shell IV", "Shell III", "Shell II", "Shell"},
 		['Protectra']	=	{"Protectra V", "Protectra IV", "Protectra III", "Protectra II", "Protectra"},
-		['Shellra']	=	{"Shellra V", "Shellra IV", "Shellra III", "Shellra II", "Shellra"},
-		['Regen']	=	{"Regen III", "Regen II", "Regen"},
-		['Banish']	=	{"Banish III", "Banish II", "Banish"},
+		['Shellra']		=	{"Shellra V", "Shellra IV", "Shellra III", "Shellra II", "Shellra"},
+		['Regen']		=	{"Regen III", "Regen II", "Regen"},
+		['Banish']		=	{"Banish III", "Banish II", "Banish"},
 
 		--blm
-		['Stone']	=	{"Stone IV", "Stone III", "Stone II", "Stone"},
-		['Water']	=	{"Water IV", "Water III", "Water II", "Water"},
-		['Aero']	=	{"Aero IV", "Aero III", "Aero II", "Aero"},
-		['Fire']	=	{"Fire IV", "Fire III", "Fire II", "Fire"},
+		['Stone']		=	{"Stone IV", "Stone III", "Stone II", "Stone"},
+		['Water']		=	{"Water IV", "Water III", "Water II", "Water"},
+		['Aero']		=	{"Aero IV", "Aero III", "Aero II", "Aero"},
+		['Fire']		=	{"Fire IV", "Fire III", "Fire II", "Fire"},
 		['Blizzard']	=	{"Blizzard IV", "Blizzard III", "Blizzard II", "Blizzard"},
-		['Thunder']	=	{"Thunder IV", "Thunder III", "Thunder II", "Thunder"},
-		['Stonega']	=	{"Stonega III", "Stonega II", "Stonega"},
-		['Waterga']	=	{"Waterga III", "Waterga II", "Waterga"},
-		['Aeroga']	=	{"Aeroga III", "Aeroga II", "Aeroga"},
-		['Firaga']	=	{"Firaga III", "Firaga II", "Firaga"},
+		['Thunder']		=	{"Thunder IV", "Thunder III", "Thunder II", "Thunder"},
+		['Stonega']		=	{"Stonega III", "Stonega II", "Stonega"},
+		['Waterga']		=	{"Waterga III", "Waterga II", "Waterga"},
+		['Aeroga']		=	{"Aeroga III", "Aeroga II", "Aeroga"},
+		['Firaga']		=	{"Firaga III", "Firaga II", "Firaga"},
 		['Blizzaga']	=	{"Blizzaga III", "Blizzaga II", "Blizzaga"},
 		['Thundaga']	=	{"Thundaga III", "Thundaga II", "Thundaga"},
-		['Sleep']	=	{"Sleep II", "Sleep"},
-		['Sleepga']	=	{"Sleepga II", "Sleepga"},
-		--['Quake']	=	{"Quake II", "Quake"},
-		--['Flood']	=	{"Flood II", "Flood"},
+		['Sleep']		=	{"Sleep II", "Sleep"},
+		['Sleepga']		=	{"Sleepga II", "Sleepga"},
+		--['Quake']		=	{"Quake II", "Quake"},
+		--['Flood']		=	{"Flood II", "Flood"},
 		--['Tornado']	=	{"Tornado II", "Tornado"},
-		--['Flare']	=	{"Flare II", "Flare"},
+		--['Flare']		=	{"Flare II", "Flare"},
 		--['Freeze']	=	{"Freeze II", "Freeze"},
-		--['Burst']	=	{"Burst II", "Burst"},
+		--['Burst']		=	{"Burst II", "Burst"},
 		
 
 		--rdm
-		['Dia']		=	{"Dia III", "Dia II", "Dia"},
-		['Bio']		=	{"Bio III", "Bio II", "Bio"},
-		['Poison']	=	{"Poison II", "Poison"},
+		['Dia']			=	{"Dia III", "Dia II", "Dia"},
+		['Bio']			=	{"Bio III", "Bio II", "Bio"},
+		['Poison']		=	{"Poison II", "Poison"},
 		--['Phalanx']	=	{"Phalanx II", "Phalanx"}
-		--['Blind']	=	{"Blind II", "Blind"},
+		--['Blind']		=	{"Blind II", "Blind"},
 		--['Paralyze']	=	{"Paralyze II", "Paralyze"},
-		--['Slow']	=	{"Slow II", "Slow"}
+		--['Slow']		=	{"Slow II", "Slow"}
 
 		--smn
 		--tbd fuq u
 
 		--drk
-		['Drain']	=	{"Drain II", "Drain"},
+		['Drain']		=	{"Drain II", "Drain"},
 
 		--brd
-		['Minuet'] = {"Valor Minuet IV", "Valor Minuet III", "Valor Minuet II", "Valor Minuet"},
-		['Minne'] = {"Knight's Minne IV", "Knight's Minne III", "Knight's Minne II", "Knight's Minne"},
-		['March'] = {"Victory March", "Advancing March"},
-		['Madrigal'] = {"Blade Madrigal", "Sword Madrigal"},
-		['Prelude'] = {"Archer's Prelude", "Hunter's Prelude"},
-		['Mambo'] = {"Dragonfoe Mambo", "Sheepfoe Mambo"},
-		['Mazurka'] = {"Chocobo Mazurka", "Raptor Mazurka"},
-		['Ballad'] = {"Mage's Ballad II", "Mage's Ballad"},
-		['Paeon'] = {"Army's Paeon V", "Army's Paeon IV", "Army's Paeon III", "Army's Paeon II", "Army's Paeon"},
-		['Elegy'] = {"Carnage Elegy", "Battlefield Elegy"},
-		['Requiem'] = {"Foe Requiem VI", "Foe Requiem V", "Foe Requiem IV", "Foe Requiem III", "Foe Requiem II", "Foe Requiem"},
+		['Minuet']		=	{"Valor Minuet IV", "Valor Minuet III", "Valor Minuet II", "Valor Minuet"},
+		['Minne']		=	{"Knight's Minne IV", "Knight's Minne III", "Knight's Minne II", "Knight's Minne"},
+		['March']		=	{"Victory March", "Advancing March"},
+		['Madrigal']	=	{"Blade Madrigal", "Sword Madrigal"},
+		['Prelude']		=	{"Archer's Prelude", "Hunter's Prelude"},
+		['Mambo']		=	{"Dragonfoe Mambo", "Sheepfoe Mambo"},
+		['Mazurka']		=	{"Chocobo Mazurka", "Raptor Mazurka"},
+		['Ballad']		=	{"Mage's Ballad II", "Mage's Ballad"},
+		['Paeon']		=	{"Army's Paeon V", "Army's Paeon IV", "Army's Paeon III", "Army's Paeon II", "Army's Paeon"},
+		['Elegy']		=	{"Carnage Elegy", "Battlefield Elegy"},
+		['Requiem']		=	{"Foe Requiem VI", "Foe Requiem V", "Foe Requiem IV", "Foe Requiem III", "Foe Requiem II", "Foe Requiem"},
 
 		--nin
-		['Utsusemi'] = {"Utsusemi: Ni", "Utsusemi: Ichi"}
+		['Utsusemi']	=	{"Utsusemi: Ni", "Utsusemi: Ichi"}
 		--tbd
 
 	}
