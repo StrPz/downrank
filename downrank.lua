@@ -76,8 +76,13 @@ function parsespell(spell, spellid)
 	if spellid == nil then return key end									-- some1 fucking around
 	local spellinfo = resource:GetSpellById(spellid).LevelRequired
 	if spellinfo[mj] == -1 and spellinfo[sj] == -1 then return key end -- -1 is the value returned when mainjob and subjob are
-	for i in pairs(tableofstuff) do										-- not capable of handling the spell. Can't cast, end.
-		if string.match(spell, i .. [[%s]]) then
+	for i in pairs(tableofstuff) do	
+		if string.match(spell, 'ga') then
+			if string.match(spell, i .. [[%s]]) then
+				key = i														--Iterate through table
+				return key
+			end							-- not capable of handling the spell. Can't cast, end.
+		elseif string.match(spell, i) then
 			key = i														--Iterate through table
 			return key
 		end

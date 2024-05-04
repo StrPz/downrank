@@ -3,7 +3,7 @@
 
 Takes your simple macros such as /ma "Dia II" <t> and kicks them back to the game as /ma "Dia" <t> if you are level synced or the original spell is on cd. 
 
-Why did I make this program: Bored of having a bunch of macros laying around for level sync.
+waaaaa
 
 ## Unsupported skills
 >SMN
